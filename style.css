@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+.container{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url(img/bg.jpg);
+    color: aliceblue;
+    background-position: bottom center;
+    background-size: cover;
+    background-position-y: 75%;
+    padding: 10px;
+    text-align: center;
+}
+.container h1{
+    margin-top: 50px;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.typeof{
+    display: flex;
+    list-style: none;
+    background: #212121;
+    width: fit-content;
+    border-radius: 200px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    padding: 6px;
+}
+.typeof li{
+    font-size: 1.2rem;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+.typeselect1{
+ background: whitesmoke;
+ color: #212121;
+ border-radius: 100px 2px 2px 100px ;
+}
+.typeselect2{
+ background: whitesmoke;
+ color: #212121;
+ border-radius: 2px 100px 100px 2px ;
+}
+
+/*! stop watch styles */
+.stopwatch{
+    text-align: center;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    
+}
+.numberbox{
+    display: flex;
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+.start button{
+    background: none;
+    margin-top: 50px;
+    font-size: 2rem;
+    outline: none;
+    border: 2px solid #00838F;
+    border-radius: 5px;
+    padding: 5px 60px;
+    cursor: pointer;
+    color: whitesmoke;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+.restart button{
+    margin-top: 10px;
+    padding: 5px 46px;
+}
+
+/*! timer style  */
+#timer{
+    display: none;
+}
+.timer{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    flex-direction: column;
+}
+.numberboxs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.numberboxs p,span{
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+.setvalue input{
+    margin-top: 10px;
+    background: whitesmoke;
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 10px;
+}
+.setvalue{
+    display: none;
+    justify-content: center;
+}
+.setbtn button{
+    background: none;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    border: 2px solid #00838F;
+    color: whitesmoke;
+    font-weight: 300;
+    padding: 10px 35px;
+    text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+#message{
+   font-size: 1.5rem;
+   color: white;
+   font-weight: 300;
+   font-family: 'Rubik', sans-serif;
+}

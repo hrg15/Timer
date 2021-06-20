@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Timer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="type">
+            <ul class="typeof">
+                <li class="t-1 typeselect1">stopwatch</li>
+                <li class="t-2 ">timer</li>
+            </ul>
+        </div>
+        <div id="stoptimer">
+            
+            <h1>Stopwatch</h1>
+            <div class="stopwatch">
+    
+                <div class="numberbox ">
+                    <p class="number" id="day">00</p>:
+                </div>
+                <div class="numberbox">
+                    <p class="number" id="hour">00</p>:
+                </div>
+                <div class="numberbox">
+                    <p class="number" id="min">00</p>:
+                </div>
+                <div class="numberbox">
+                    <p class="number" id="sec">00</p>
+                </div>
+            </div>
+            <div class="start">
+                <button id="status">start</button>
+            </div>
+            <div class="restart start">
+                <button onclick="restart()">restart</button>
+            </div>
+        </div>
+        <div id="timer">
+            <h1>Timer</h1>
+            <div class="timer">
+                
+                <div class="numberboxs">
+
+                    <p id="days">00</p><span>:</span>
+                    <p id="hours">00</p><span>:</span>
+                    <p id="minute">00</p><span>:</span>
+                    <p id="seconds">00</p>
+
+                </div> 
+                <div class="setvalue">
+                    
+                    <input type="number" placeholder="00" id="setdays" min="0" max="10" maxlength="2">
+                    <input type="number" placeholder="00" id="sethours" min="0" max="24" maxlength="2">
+                    <input type="number" placeholder="00" id="setminute" min="0" max="60" maxlength="2">
+                    <input type="number" placeholder="00" id="setseconds" min="0" max="60" maxlength="2">
+                </div>
+                <div class="message">
+                    <p id="message"></p>
+                </div>
+                <div class="setbtn">
+                    <button id="timerstart">start</button> <button id="timersetting">setting</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
